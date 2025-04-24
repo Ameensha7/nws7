@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "Enter Number : \c"
+echo "Enter a Number :"
 read n
-while [ $n -gt 2 ]
+while [ "$n" -gt 2 ]
 do
 for((i=2; i<=$n/2; i++))
 do
@@ -14,3 +14,4 @@ fi
 done
 done
 echo "$n is a prime number."
+

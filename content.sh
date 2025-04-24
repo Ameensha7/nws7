@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -ne 2 ]; then
-echo "Usage: $0 file1 file2"
+echo "Usage: $0 fib.sh fact.sh"
 exit 1
 fi
 if cmp -s "$1" "$2"; then
@@ -9,4 +9,3 @@ rm "$2"
 else
 echo "The contents of $1 and $2 are different."
 fi
-
